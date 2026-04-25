@@ -2,7 +2,7 @@ import React from 'react';
 import { Sparkles, Rocket, Box, Flame } from 'lucide-react';
 
 // --- IMPORT IMAGE ---
-import whyChooseUsImg from '../../assets/images/whychooseus.png';
+import whyChooseUsImg from '../../assets/images/whychooseus.webp';
 
 const WhyChooseUs = () => {
     
@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
                         Why Choose Us
                     </div>
                     <h2 className="text-4xl lg:text-6xl font-semibold text-white font-['Manrope'] tracking-tight leading-tight">
-                        Why Businesses Trust <br /> <span className="text-blue-400">Canva Solutions</span>
+                        Why Businesses Trust <br /> <span className="text-blue-400">NMS Enovix</span>
                     </h2>
                 </div>
 

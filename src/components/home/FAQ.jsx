@@ -47,7 +47,7 @@ const FAQ = () => {
 
     const faqs = [
         {
-            question: "What makes Canva Solutions different from any other digital agency?",
+            question: "What makes NMS Enovix different from any other digital agency?",
             answer: "We don't just build websites; we build business engines. By combining AI-driven data analysis with high-end creativity, we ensure every pixel and line of code contributes directly to your ROI."
         },
         {

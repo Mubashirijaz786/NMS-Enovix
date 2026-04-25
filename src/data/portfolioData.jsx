@@ -1,31 +1,31 @@
 // 1. Import all images from your local folder
-import usmanBilla from '../assets/images/portfolio/usmanbilla.jpeg';
-import chaseIt from '../assets/images/portfolio/chaseit.jpeg';
-import training from '../assets/images/portfolio/traning.jpeg';
-import crewter from '../assets/images/portfolio/Crewter.jpeg';
-import talkNest from '../assets/images/portfolio/talknest.jpeg';
-import nordjouren from '../assets/images/portfolio/Nordjouren.jpeg';
-import staxmatic from '../assets/images/portfolio/Staxmatic.jpeg';
-import gota from '../assets/images/portfolio/gota.jpeg';
-import theRecord from '../assets/images/portfolio/the record.jpeg';
-import qbiz from '../assets/images/portfolio/Qbiz.jpeg';
-import callvet from '../assets/images/portfolio/callvet.jpeg';
-import unitedWay from '../assets/images/portfolio/united way.jpeg';
-import liferay from '../assets/images/portfolio/liferay.jpeg';
-import youAndMe from '../assets/images/portfolio/youandme.jpeg';
-import crystalSolution from '../assets/images/portfolio/Crystalsolution.jpeg';
-import kissanGhar from '../assets/images/portfolio/kissanghar.jpeg';
-import nest from '../assets/images/portfolio/nest.jpeg';
+import usmanBilla from '../assets/images/portfolio/usmanbilla.webp';
+import chaseIt from '../assets/images/portfolio/chaseit.webp';
+import training from '../assets/images/portfolio/traning.webp';
+import crewter from '../assets/images/portfolio/Crewter.webp';
+import talkNest from '../assets/images/portfolio/talknest.webp';
+import nordjouren from '../assets/images/portfolio/Nordjouren.webp';
+import staxmatic from '../assets/images/portfolio/Staxmatic.webp';
+import gota from '../assets/images/portfolio/gota.webp';
+import theRecord from '../assets/images/portfolio/the record.webp';
+import qbiz from '../assets/images/portfolio/Qbiz.webp';
+import callvet from '../assets/images/portfolio/callvet.webp';
+import unitedWay from '../assets/images/portfolio/united way.webp';
+import liferay from '../assets/images/portfolio/liferay.webp';
+import youAndMe from '../assets/images/portfolio/youandme.webp';
+import crystalSolution from '../assets/images/portfolio/Crystalsolution.webp';
+import kissanGhar from '../assets/images/portfolio/kissanghar.webp';
+import nest from '../assets/images/portfolio/nest.webp';
 
 // Dashboard / Web Analytics Images
-import webAnalytics from '../assets/images/portfolio/webanalrics.jpeg';
-import webAna from '../assets/images/portfolio/webana.jpeg';
-import web1 from '../assets/images/portfolio/web1.jpeg';
-import web2 from '../assets/images/portfolio/web2.jpeg';
-import web3 from '../assets/images/portfolio/web3.jpeg';
-import web4 from '../assets/images/portfolio/web4.jpeg';
-import web5 from '../assets/images/portfolio/web5.jpeg';
-import web6 from '../assets/images/portfolio/web6.jpeg';
+import webAnalytics from '../assets/images/portfolio/webanalrics.webp';
+import webAna from '../assets/images/portfolio/webana.webp';
+import web1 from '../assets/images/portfolio/web1.webp';
+import web2 from '../assets/images/portfolio/web2.webp';
+import web3 from '../assets/images/portfolio/web3.webp';
+import web4 from '../assets/images/portfolio/web4.webp';
+import web5 from '../assets/images/portfolio/web5.webp';
+import web6 from '../assets/images/portfolio/web6.webp';
 
 // 2. Define Categories
 export const categories = ["All", "Web Dev", "E-Commerce", "Dashboards", "Mobile Apps"];

@@ -15,12 +15,12 @@ import ServiceLayout from './ServiceLayout';
 import PrimaryButton from '../common/PrimaryButton';
 
 // ✅ IMPORT LOCAL IMAGE
-import graphicHero from '../../assets/images/Graphic.jpg';
+import graphicHero from '../../assets/images/Graphic.webp';
 
 const GraphicDesign = () => {
     
     // External Link
-    const calendlyLink = "https://calendly.com/canvasolutions-info/";
+    const calendlyLink = "#"; // Replace with your actual Calendly link when ready
 
     // 1. Design Services We Offer
     const offerings = [

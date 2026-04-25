@@ -9,16 +9,13 @@ const ServiceLayout = ({ children, title, subtitle }) => {
     return (
         <div className="w-full relative bg-[#020617] min-h-screen text-white selection:bg-blue-500/30">
             
-            {/* 1. Navbar */}
-            <div className="pt-[33px] px-6 lg:px-16 max-w-[1464px] mx-auto relative z-50">
-                <Navbar />
+           <div className="relative w-full flex items-center justify-center p-2 sm:p-4 z-50">
+              
+                <div className="relative z-10 w-full lg:w-[98%] bg-transparent border border-transparent flex flex-col px-4 sm:px-10 lg:px-16 pt-4">
+                    <Navbar />
+                </div>
             </div>
 
-            {/* 2. Reusable Service Hero (CONDITIONAL) */}
-            {/* Only render this section if a 'title' is provided. 
-                This allows pages like 'Services.jsx' to build their own custom Hero 
-                without having two Hero sections stacked.
-            */}
             {title && (
                 <section className="relative pt-20 pb-32 px-6 lg:px-16 overflow-hidden">
                     {/* Background Glow */}
@@ -39,9 +36,9 @@ const ServiceLayout = ({ children, title, subtitle }) => {
             )}
 
             {/* 3. The Page Specific Content */}
-            <main className="relative z-10">
+            <div className="relative z-10">
                 {children}
-            </main>
+            </div>
 
             {/* 4. Common Bottom Sections */}
             <FinalCTA />

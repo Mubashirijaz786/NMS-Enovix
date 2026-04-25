@@ -15,12 +15,12 @@ import ServiceLayout from './ServiceLayout';
 import PrimaryButton from '../common/PrimaryButton';
 
 // ✅ IMPORT LOCAL IMAGE
-import socialHero from '../../assets/images/Social.jpg';
+import socialHero from '../../assets/images/Social.webp';
 
 const SocialMedia = () => {
     
     // External Link
-    const calendlyLink = "https://calendly.com/canvasolutions-info/";
+    const calendlyLink = "#"; // Replace with your actual Calendly link when ready
 
     // 1. Social Services We Offer
     const offerings = [

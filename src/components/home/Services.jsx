@@ -24,7 +24,7 @@ const Services = () => {
                 </h2>
 
                 <p className="text-gray-400 text-lg sm:text-xl lg:text-2xl max-w-2xl mx-auto">
-                    Canva Solutions Expert Digital Services
+                    NMS Enovix Expert Digital Services
                 </p>
             </div>
 

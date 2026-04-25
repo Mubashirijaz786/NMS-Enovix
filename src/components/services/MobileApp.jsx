@@ -15,12 +15,12 @@ import ServiceLayout from './ServiceLayout';
 import PrimaryButton from '../common/PrimaryButton';
 
 // ✅ IMPORT LOCAL IMAGE
-import mobileHero from '../../assets/images/Mobile.jpg';
+import mobileHero from '../../assets/images/Mobile.webp';
 
 const MobileApp = () => {
     
     // External Link
-    const calendlyLink = "https://calendly.com/canvasolutions-info/";
+    const calendlyLink = "#";
 
     // 1. App Development Services
     const offerings = [
@@ -271,11 +271,11 @@ const MobileApp = () => {
                             },
                             { 
                                 q: "How will you make sure that the mobile application is secure?", 
-                                a: "We have many ways to develop secure mobile apps, and at Canva Solutions, we treat security as a first-class citizen and use as many of these techniques as possible to ensure an app’s security. First, we adhere to industry-standard data protection regulations. In addition, the best practices related to data authentication and authorization are employed and ensure secure data transmission through solid data encryption." 
+                                a: "We have many ways to develop secure mobile apps, and at NMS Enovix, we treat security as a first-class citizen and use as many of these techniques as possible to ensure an app’s security. First, we adhere to industry-standard data protection regulations. In addition, the best practices related to data authentication and authorization are employed and ensure secure data transmission through solid data encryption." 
                                 //
                             },
                             { 
-                                q: "What software technologies will Canva Solutions use for my project?", 
+                                q: "What software technologies will NMS Enovix use for my project?", 
                                 a: "Our highly skilled and diverse talent pool enables us to create custom software using the languages, platforms, and frameworks of your choice, ensuring compatibility of tools and seamless integrations that help avoid costly and unnecessary upgrades. We also offer technology modernization services that allow bringing current solutions into line with your new custom software." 
                                 //
                             }

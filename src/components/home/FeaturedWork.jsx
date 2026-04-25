@@ -6,9 +6,9 @@ import PrimaryButton from '../common/PrimaryButton';
 import SecondaryButton from '../common/SecondaryButton';
 
 // --- IMPORT IMAGES ---
-import work1 from '../../assets/images/work1.png';
-import work2 from '../../assets/images/work2.png';
-import work3 from '../../assets/images/work3.png';
+import work1 from '../../assets/images/work1.webp';
+import work2 from '../../assets/images/work2.webp';
+import work3 from '../../assets/images/work3.webp';
 
 const FeaturedWork = () => {
     

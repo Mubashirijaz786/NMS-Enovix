@@ -8,7 +8,7 @@ import {
     MapPin 
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo.png'; 
+import logo from '../../assets/images/logo.webp'; 
 
 const UpworkIcon = ({ size, className }) => (
   <img 
@@ -37,9 +37,9 @@ const Footer = () => {
                     {/* 1. LOGO SECTION - Increased size and reduced top spacing */}
                     <div className="lg:w-1/4 flex flex-col items-center lg:items-start lg:-mt-6">
                         {/* Changed h-24 to h-32 for a much larger logo on big displays */}
-                        <img src={logo} alt="Canva Solutions" className="h-20 lg:h-32 w-auto object-contain mb-4" />
+                        <img src={logo} alt="NMS Enovix" className="h-20 lg:h-32 w-auto object-contain mb-4" />
                         <p className="text-gray-400 text-sm leading-relaxed max-w-[280px]">
-                            Canva Solutions stand as your Primer partner offering IT & Network, Accounting & Digital services
+                            NMS Enovix stand as your Primer partner offering IT & Network, Accounting & Digital services
                         </p>
                     </div>
 
@@ -65,36 +65,34 @@ const Footer = () => {
                             
                             <div className="flex flex-col gap-3">
                                 <a href="tel:+17374436352" className="flex items-center gap-2 text-white font-medium hover:text-blue-400 transition-colors text-[11px] sm:text-sm">
-                                    <Phone size={14} className="text-blue-400 shrink-0" /> +1 737 443 6352
+                                    <Phone size={14} className="text-blue-400 shrink-0" /> 0340-7352121
                                 </a>
-                                <a href="tel:+923130901786" className="flex items-center gap-2 text-white font-medium hover:text-blue-400 transition-colors text-[11px] sm:text-sm">
-                                    <Phone size={14} className="text-blue-400 shrink-0" /> +92 313 0901786
-                                </a>
+                               
                                 <a href="mailto:info@canvasolutions.co.uk" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-[10px] sm:text-[13px] break-all">
-                                    <Mail size={14} className="text-blue-400 shrink-0" /> info@canvasolutions.co.uk
+                                    <Mail size={14} className="text-blue-400 shrink-0" /> mubashirejaz786@gmail.com
                                 </a>
                             </div>
 
                             <div className="flex items-start gap-2 text-gray-400 text-[11px] sm:text-sm lg:border-none border-l border-white/10 pl-2 lg:pl-0">
                                 <MapPin size={14} className="text-blue-400 mt-1 shrink-0" />
                                 <span className="leading-relaxed">
-                                    920 South West Pkwy E College <br /> Station TX 77840 USA
+                                    Sargodha
                                 </span>
                             </div>
 
                         </div>
                         
                         <div className="flex items-center justify-center lg:justify-start gap-6 mt-2 w-full">
-                            <a href="https://www.facebook.com/canvasolutionsofficial" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                            <a href="https://www.facebook.com/canvasolutionsofficial" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page" className="text-white hover:text-blue-400 transition-colors">
                                 <Facebook size={20} />
                             </a>
-                            <a href="https://www.instagram.com/canva_solutions_" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                            <a href="https://www.instagram.com/canva_solutions_" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" className="text-white hover:text-blue-400 transition-colors">
                                 <Instagram size={20} />
                             </a>
-                            <a href="https://upwork.com/freelancers/canvasolutions" target="_blank" rel="noopener noreferrer" className="text-white hover:opacity-80 transition-opacity">
+                            <a href="https://upwork.com/freelancers/canvasolutions" target="_blank" rel="noopener noreferrer" aria-label="View our Upwork profile" className="text-white hover:opacity-80 transition-opacity">
                                 <UpworkIcon size={20} />
                             </a>
-                            <a href="https://www.linkedin.com/company/canva-solutions/?originalSubdomain=pk" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                            <a href="https://www.linkedin.com/company/canva-solutions/?originalSubdomain=pk" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn company page" className="text-white hover:text-blue-400 transition-colors">
                                 <Linkedin size={20} />
                             </a>
                         </div>
@@ -102,9 +100,9 @@ const Footer = () => {
 
                     {/* 4. COPYRIGHT */}
                     <div className="lg:w-1/6 text-sm text-gray-500 leading-relaxed flex flex-col items-center lg:items-end lg:mt-0 w-full lg:text-right lg:pt-4">
-                        <p>Canva Solutions © 2025.</p>
+                        <p>NMS Enovix © 2025.</p>
                         <p>All Rights Reserved.</p>
-                        <p className="opacity-50 mt-1 text-xs">Designed by Canva Solutions.</p>
+                        <p className="opacity-50 mt-1 text-xs">Designed by NMS Enovix.</p>
                     </div>
 
                 </div>

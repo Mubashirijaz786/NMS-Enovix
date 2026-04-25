@@ -15,12 +15,12 @@ import ServiceLayout from '../../components/services/ServiceLayout';
 import PrimaryButton from '../../components/common/PrimaryButton';
 
 // ✅ IMPORT YOUR LOCAL IMAGE HERE
-import seoHero from '../../assets/images/SEO.jpg'; 
+import seoHero from '../../assets/images/SEO.webp'; 
 
 const SEO = () => {
     
     // External Link
-    const calendlyLink = "https://calendly.com/canvasolutions-info/";
+    const calendlyLink = "#"; // Replace with your actual Calendly link when ready
 
     // 1. Key Features Data
     const features = [

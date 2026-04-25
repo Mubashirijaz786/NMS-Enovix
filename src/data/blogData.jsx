@@ -1,14 +1,14 @@
 // --- IMPORT LOCAL IMAGES ---
 // Blog 1 Images (Freelancing)
-import freelanceMain from '../assets/images/blog/main1.jpg'; 
-import freelance1 from '../assets/images/blog/2.jpg';
-import freelance2 from '../assets/images/blog/3.jpg';
+import freelanceMain from '../assets/images/blog/main1.webp'; 
+import freelance1 from '../assets/images/blog/2.webp';
+import freelance2 from '../assets/images/blog/3.webp';
 
 // Blog 2 Image (Business)
-import businessMain from '../assets/images/blog/main2.jpg'; 
+import businessMain from '../assets/images/blog/main2.webp'; 
 
-// Blog 3 Image (Digital Services) - Make sure main3.jpg exists!
-import digitalMain from '../assets/images/blog/main3.jpg'; 
+// Blog 3 Image (Digital Services) - Make sure main3.webp exists!
+import digitalMain from '../assets/images/blog/main3.webp'; 
 
 
 export const blogData = [

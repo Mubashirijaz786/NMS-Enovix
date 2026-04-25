@@ -27,17 +27,19 @@ const Portfolio = () => {
             
             {/* ✅ SEO META TAGS FOR PORTFOLIO */}
             <MetaData 
-                title="Portfolio – Canva Solutions" 
-                description="Explore our curated portfolio of award-winning web development, mobile apps, and custom software projects. See how Canva Solutions builds digital legacies for global brands."
-                keywords="web development portfolio, app development case studies, software projects, UI/UX design portfolio, Canva Solutions work, digital agency projects"
+                title="Portfolio – NMS Enovix" 
+                description="Explore our curated portfolio of award-winning web development, mobile apps, and custom software projects. See how NMS Enovix builds digital legacies for global brands."
+                keywords="web development portfolio, app development case studies, software projects, UI/UX design portfolio, NMS Enovix work, digital agency projects"
             />
 
-            {/* 1. NAVBAR WRAPPER */}
-            <div className="pt-[33px] px-4 lg:px-16 max-w-[1464px] mx-auto relative z-50">
-                <Navbar />
+        <div className="relative w-full flex items-center justify-center p-2 sm:p-4 z-50">
+              
+                <div className="relative z-10 w-full lg:w-[98%] bg-transparent border border-transparent flex flex-col px-4 sm:px-10 lg:px-16 pt-4">
+                    <Navbar />
+                </div>
             </div>
-
             {/* 2. HERO SECTION */}
+            <main id="main-content">
             <section className="relative pt-20 pb-24 px-6 lg:px-16 overflow-hidden">
                 <div className="absolute inset-0 bg-blue-600/10 blur-[120px] pointer-events-none"></div>
                 
@@ -168,6 +170,7 @@ const Portfolio = () => {
 
             {/* 6. CTA */}
             <FinalCTA />
+            </main>
 
             {/* 7. FOOTER */}
             <Footer />

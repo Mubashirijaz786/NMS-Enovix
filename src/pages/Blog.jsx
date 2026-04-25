@@ -27,16 +27,17 @@ const Blog = () => {
             
             {/* ✅ SEO META TAGS ADDED */}
             <MetaData 
-                title="Blog – Canva Solutions" 
-                description="Explore expert insights on web development, app creation, SEO strategies, and digital business growth. Stay ahead with the latest tech trends from Canva Solutions."
+                title="Blog – NMS Enovix" 
+                description="Explore expert insights on web development, app creation, SEO strategies, and digital business growth. Stay ahead with the latest tech trends from NMS Enovix."
                 keywords="tech blog, web development insights, app development trends, SEO tips, digital marketing blog, software engineering articles, business growth strategies"
             />
 
-            {/* 1. NAVBAR WRAPPER */}
-            <div className="pt-[33px] px-4 lg:px-16 max-w-[1464px] mx-auto relative z-50">
-                <Navbar />
+          <div className="relative w-full flex items-center justify-center p-2 sm:p-4 z-50">
+              
+                <div className="relative z-10 w-full lg:w-[98%] bg-transparent border border-transparent flex flex-col px-4 sm:px-10 lg:px-16 pt-4">
+                    <Navbar />
+                </div>
             </div>
-
             {/* 2. HERO SECTION */}
             <section className="relative pt-20 pb-16 px-6 lg:px-16 overflow-hidden">
                 <div className="absolute inset-0 bg-blue-600/10 blur-[120px] pointer-events-none"></div>
@@ -54,6 +55,8 @@ const Blog = () => {
                 </div>
             </section>
 
+            {/* MAIN CONTENT LANDMARK */}
+            <main id="main-content">
             {/* 3. BLOG POSTS LIST (All Large Cards) */}
             <section className="pb-32 px-6 lg:px-16 pt-10">
                 <div className="container mx-auto max-w-[1400px] space-y-12">
@@ -113,6 +116,7 @@ const Blog = () => {
 
                 </div>
             </section>
+        </main>
 
             {/* 4. FOOTER */}
             <Footer />

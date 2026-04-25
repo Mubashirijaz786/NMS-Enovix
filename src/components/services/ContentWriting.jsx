@@ -14,12 +14,12 @@ import ServiceLayout from '../../components/services/ServiceLayout';
 import PrimaryButton from '../../components/common/PrimaryButton';
 
 // ✅ IMPORT LOCAL IMAGE
-import contentHero from '../../assets/images/Content-Writing.jpg';
+import contentHero from '../../assets/images/Content-Writing.webp';
 
 const ContentWriting = () => {
     
     // External Link
-    const calendlyLink = "https://calendly.com/canvasolutions-info/";
+    const calendlyLink = "#";
 
     // 1. Content Services We Offer
     const offerings = [
