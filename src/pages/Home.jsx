@@ -25,26 +25,30 @@ const Home = () => {
     <div className="w-full relative bg-[#020617]">
       {/* ✅ UPDATED: Professional SEO Meta Tags */}
       <MetaData 
-        title="Canva Solutions" 
-        description="Transform your business with Canva Solutions. We specialize in custom web development, mobile apps, SEO, and graphic design to drive real digital growth."
-        keywords="web development agency, mobile app developers, SEO experts, graphic design, ecommerce solutions, custom software, digital marketing agency, Canva Solutions"
+        title="NMS Enovix" 
+        description="Transform your business with NMS Enovix. We specialize in custom web development, mobile apps, SEO, and graphic design to drive real digital growth."
+        keywords="web development agency, mobile app developers, SEO experts, graphic design, ecommerce solutions, custom software, digital marketing agency, NMS Enovix"
       />
 
       <Hero />
       
-      <div id="trusted-section"> 
-        <TrustedBy />
-      </div>
+      {/* MAIN CONTENT LANDMARK */}
+      <main id="main-content">
+        <div id="trusted-section"> 
+          <TrustedBy />
+        </div>
 
-      <Services />
-      <ScrollingTicker />
-      <FeaturedWork />
-      <WhyChooseUs />
-      <Testimonials />
-      <InsightsBlog />
-      <Stats />
-      <FAQ />
-      <FinalCTA />
+        <Services />
+        <ScrollingTicker />
+        <FeaturedWork />
+        <WhyChooseUs />
+        <Testimonials />
+        <InsightsBlog />
+        <Stats />
+        <FAQ />
+        <FinalCTA />
+      </main>
+      {/* END MAIN CONTENT */}
 
       <Footer />
       

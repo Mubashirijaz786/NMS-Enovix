@@ -2,89 +2,82 @@ import React, { useState } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react'; 
 import { Link } from 'react-router-dom';
 
-import logo from '../../assets/images/logo.png';
-
-// Import Components
+import logo from '../../assets/images/logo.webp';
 import PrimaryButton from '../common/PrimaryButton';
 import ServicesDropdown from './ServicesDropdown';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-
-    // External Link
-    const calendlyLink = "https://calendly.com/canvasolutions-info/";
+    const calendlyLink = "#";
 
     return (
-        <nav className="relative z-50 mb-8 lg:mb-16 w-full">
+        <nav className="relative z-50 mb-8 lg:mb-16 w-full px-2 sm:px-0">
             
-            <div className="flex items-center justify-between w-auto -mx-4 lg:-mx-10 px-8 lg:px-3 py-4 border border-white/10 rounded-2xl bg-black/20 backdrop-blur-md shadow-lg">
+         
+            <div className="flex items-center justify-between w-full lg:relative lg:left-1/2 lg:-translate-x-1/2 lg:w-[calc(100%+4rem)] xl:w-[calc(100%+6rem)] px-6 lg:px-8 xl:px-12 py-5 lg:py-6 border border-white/10 rounded-2xl bg-black/20 backdrop-blur-md shadow-lg transition-all">
 
-                {/* Logo Image */}
-                <Link to="/" className="cursor-pointer">
+                {/* Logo Section */}
+                <Link to="/" className="cursor-pointer shrink-0">
                     <img
                         src={logo}
-                        alt="Canva Solutions"
-                        className="h-8 lg:h-18 w-auto object-contain"
+                        alt="NMS Enovix"
+                        className="h-12 lg:h-18 xl:h-18 w-auto object-contain"
                     />
                 </Link>
 
                 {/* Desktop Links */}
-                <div className="hidden lg:flex items-center gap-12 text-[16px] font-medium text-gray-200">
-                    <Link to="/" className="hover:text-white transition-colors">Home</Link>
+                <div className="hidden lg:flex items-center lg:gap-6 xl:gap-14 font-medium text-gray-200">
+                    <Link to="/" className="hover:text-white transition-colors text-sm xl:text-base whitespace-nowrap">Home</Link>
                     
-                    {/* --- SERVICES DROPDOWN GROUP --- */}
                     <div className="relative group">
                         <Link 
                             to="/Services" 
-                            className="flex items-center gap-1 hover:text-white transition-colors py-4"
+                            className="flex items-center gap-1 hover:text-white transition-colors py-2 text-sm xl:text-base whitespace-nowrap"
                         >
                             Services <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300"/>
                         </Link>
-                        
                         <ServicesDropdown />
                     </div>
-                    {/* ------------------------------- */}
 
-                    <Link to="/Portfolio" className="hover:text-white transition-colors">Portfolio</Link>
-                    <Link to="/Blog" className="flex items-center gap-1 hover:text-white transition-colors">BLogs</Link>
-                    <Link to="/About" className="hover:text-white transition-colors">About</Link>
-                    <Link to="/Contact" className="hover:text-white transition-colors">Contacts</Link>
+                    <Link to="/Portfolio" className="hover:text-white transition-colors text-sm xl:text-base whitespace-nowrap">Portfolio</Link>
+                    <Link to="/Blog" className="hover:text-white transition-colors text-sm xl:text-base whitespace-nowrap">Blogs</Link>
+                    <Link to="/About" className="hover:text-white transition-colors text-sm xl:text-base whitespace-nowrap">About</Link>
+                    <Link to="/Contact" className="hover:text-white transition-colors text-sm xl:text-base whitespace-nowrap">Contacts</Link>
                 </div>
 
-                {/* Desktop Button (Updated with Link) */}
-                <div className="hidden lg:block">
+                {/* Desktop Button */}
+                <div className="hidden lg:block shrink-0 min-w-fit">
                     <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
-                        <PrimaryButton className="!px-8 !py-3">
+                        <PrimaryButton className="!px-6 xl:!px-10 !py-3.5 xl:!py-4 !text-sm xl:!text-base whitespace-nowrap">
                             Get Started
                         </PrimaryButton>
                     </a>
                 </div>
 
-                {/* Mobile Menu Toggle Button */}
+                {/* Mobile Toggle */}
                 <button 
-                    className="lg:hidden text-white p-2"
+                    className="lg:hidden text-white p-2 hover:bg-white/5 rounded-lg transition-colors"
                     onClick={() => setIsOpen(!isOpen)}
                 >
-                    {isOpen ? <X size={28} /> : <Menu size={28} />}
+                    {isOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
             </div>
 
             {/* Mobile Menu Dropdown */}
             {isOpen && (
-                <div className="absolute top-full left-0 w-full mt-2 mx-0 p-6 border border-white/10 rounded-2xl bg-[#0f172a]/95 backdrop-blur-xl lg:hidden flex flex-col gap-6 animate-fadeIn z-50 shadow-2xl">
-                    <Link to="/" className="text-gray-200 hover:text-white text-lg font-medium py-2 border-b border-white/5" onClick={() => setIsOpen(false)}>Home</Link>
-                    
-                    <Link to="/Services" className="text-gray-200 hover:text-white text-lg font-medium py-2 border-b border-white/5" onClick={() => setIsOpen(false)}>Services</Link>
-                    
-                    <Link to="/Portfolio" className="text-gray-200 hover:text-white text-lg font-medium py-2 border-b border-white/5" onClick={() => setIsOpen(false)}>Portfolio</Link>
-                    <Link to="/Blog" className="text-gray-200 hover:text-white text-lg font-medium py-2 border-b border-white/5" onClick={() => setIsOpen(false)}>Blogs</Link>
-                    <Link to="/About" className="text-gray-200 hover:text-white text-lg font-medium py-2 border-b border-white/5" onClick={() => setIsOpen(false)}>About</Link>
-                    
-                    <Link to="/Contact" className="text-gray-200 hover:text-white text-lg font-medium py-2 mb-2" onClick={() => setIsOpen(false)}>Contacts</Link>
-                    
-                    {/* Mobile Button (Updated with Link) */}
-                    <a href={calendlyLink} target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => setIsOpen(false)}>
-                        <PrimaryButton className="w-full justify-center py-4 text-lg">
+                <div className="absolute top-full left-0 w-full mt-3 p-5 border border-white/10 rounded-2xl bg-[#020617]/95 backdrop-blur-2xl lg:hidden flex flex-col gap-4 z-[60] shadow-2xl animate-in fade-in slide-in-from-top-4">
+                    {['Home', 'Services', 'Portfolio', 'Blogs', 'About', 'Contacts'].map((item) => (
+                        <Link 
+                            key={item}
+                            to={item === 'Home' ? '/' : `/${item}`} 
+                            className="text-gray-300 hover:text-white text-base font-medium py-3 px-2 rounded-xl hover:bg-white/5 transition-all"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            {item}
+                        </Link>
+                    ))}
+                    <a href={calendlyLink} target="_blank" rel="noopener noreferrer" className="pt-2" onClick={() => setIsOpen(false)}>
+                        <PrimaryButton className="w-full justify-center py-4 text-base">
                             Get Started
                         </PrimaryButton>
                     </a>

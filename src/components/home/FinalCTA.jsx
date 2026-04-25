@@ -5,7 +5,7 @@ import PrimaryButton from '../common/PrimaryButton';
 import SecondaryButton from '../common/SecondaryButton';
 
 // Images
-import contactImage from '../../assets/images/contact.png';
+import contactImage from '../../assets/images/contact.webp';
 
 const FinalCTA = () => {
     return (
@@ -45,7 +45,7 @@ const FinalCTA = () => {
 
                         {/* Description */}
                         <p className="text-blue-100/95 text-lg lg:text-xl leading-relaxed mb-12 max-w-2xl drop-shadow-md font-medium">
-                            Canva Solutions is where bold ideas become unstoppable brands. Let's build your future today.
+                            NMS Enovix is where bold ideas become unstoppable brands. Let's build your future today.
                         </p>
 
                         {/* Buttons (Centered Row) */}
@@ -60,7 +60,7 @@ const FinalCTA = () => {
 
                             {/* Secondary Button -> External Link to Calendly */}
                             <a 
-                                href="https://calendly.com/canvasolutions-info/" 
+                                href="#" 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
                                 className="w-full sm:w-auto"

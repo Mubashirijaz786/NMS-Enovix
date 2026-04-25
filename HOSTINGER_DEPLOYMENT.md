@@ -1,4 +1,4 @@
-# Hostinger Deployment Guide for Canva Solutions
+# Hostinger Deployment Guide for NMS Enovix
 
 ## Overview
 This guide ensures your React build deploys correctly to Hostinger's public_html folder.
@@ -21,7 +21,7 @@ Using File Manager or FTP (e.g., FileZilla):
 ```
 your-domain.com/public_html/
 ├── index.html          ← from dist/
-├── .htaccess           ← included in this repo (critical!)
+├── .htaccess           ← included in the project (critical!)
 ├── assets/             ← from dist/assets/
 │   ├── index-xxxxx.js
 │   ├── index-xxxxx.css

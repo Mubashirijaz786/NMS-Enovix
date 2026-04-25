@@ -2,11 +2,8 @@ import React from 'react';
 import { Star } from 'lucide-react';
 
 // --- IMPORT IMAGES ---
-import reviewBg from '../../assets/images/review-background.png'; 
-import reviewImg from '../../assets/images/review.png'; 
-
-// Hook removed for static version
-// import useReviews from '../../hooks/useReviews'; 
+import reviewBg from '../../assets/images/review-background.webp'; 
+import reviewImg from '../../assets/images/review.webp'; 
 
 const Testimonials = () => {
     
@@ -28,7 +25,7 @@ const Testimonials = () => {
         },
         {
             id: 3,
-            quote: "Canva Solutions transformed our online presence with a sleek, professional website that has significantly boosted client engagement.",
+            quote: "NMS Enovix transformed our online presence with a sleek, professional website that has significantly boosted client engagement.",
             author: "John",
             role: "Qubiz Consulting",
             rating: 5
@@ -42,7 +39,7 @@ const Testimonials = () => {
         },
         {
             id: 5,
-            quote: "Canva Solutions' expertise in web development has enhanced our outreach efforts, enabling us to better serve our community.",
+            quote: "NMS Enovix' expertise in web development has enhanced our outreach efforts, enabling us to better serve our community.",
             author: "David",
             role: "United Way",
             rating: 5
@@ -58,12 +55,11 @@ const Testimonials = () => {
 
     // Logic for Infinite Slider (Doubling the data for smooth loop)
     const sliderData = [...reviewsData, ...reviewsData]; 
-    const shouldSlide = true; // Always slide since we have 6 items
 
     // Static Featured Review (Using John's review for the big card)
     const featuredTestimonial = {
         image: reviewImg, 
-        quote: "Canva Solutions transformed our online presence with a sleek, professional website that has significantly boosted client engagement.",
+        quote: "NMS Enovix transformed our online presence with a sleek, professional website that has significantly boosted client engagement.",
         author: "Lisa",
         role: "Qubiz Consulting",
         rating: 5
@@ -81,7 +77,7 @@ const Testimonials = () => {
         <section className="relative py-24 lg:py-32 overflow-hidden" id="reviews">
             
             <div className="absolute inset-0 z-0">
-                <img src={reviewBg} alt="Background" className="w-full h-full object-cover" />
+                <img src={reviewBg} alt="Background" className="w-full h-full object-cover" loading="lazy" decoding="async" />
                 <div className="absolute inset-0 bg-[#020617]/95 mix-blend-multiply"></div>
             </div>
 
@@ -109,16 +105,17 @@ const Testimonials = () => {
                     </div>
                 </div>
 
-                {/* --- STATIC REVIEWS SLIDER --- */}
+                {/* --- INFINITE SLIDING TRACK --- */}
                 <div className="relative w-full overflow-hidden">
                     
                     {/* Gradient Masks */}
                     <div className="absolute top-0 left-0 h-full w-20 bg-gradient-to-r from-[#020617] to-transparent z-20 pointer-events-none"></div>
                     <div className="absolute top-0 right-0 h-full w-20 bg-gradient-to-l from-[#020617] to-transparent z-20 pointer-events-none"></div>
                     
-                    <div className="flex animate-loop-scroll">
+                    {/* Sliding Track */}
+                    <div className="flex w-fit animate-loop-scroll hover:pause">
                         {sliderData.map((item, index) => (
-                            <div key={index} className="w-[400px] shrink-0 mx-4">
+                            <div key={index} className="w-[85vw] sm:w-[400px] shrink-0 px-4">
                                 <div className="p-10 rounded-[2.5rem] bg-white/5 border border-white/10 backdrop-blur-md flex flex-col h-[400px] group relative overflow-hidden transition-all hover:bg-white/10 hover:-translate-y-2">
                                     <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                     <div className="relative z-10 flex flex-col h-full">

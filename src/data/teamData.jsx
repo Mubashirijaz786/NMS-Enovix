@@ -1,12 +1,12 @@
 // ✅ Step 1: Import images from your local folder
 // Make sure the path matches your folder structure: src/assets/images/team/
-import ahmadImg from '../assets/images/team/Ahmad.jpg';
-import hanzalaImg from '../assets/images/team/Hanzala.jpg';
-import husnainImg from '../assets/images/team/Husnain.jpg';
-import maleeqImg from '../assets/images/team/Maleeq.jpg';
-import moizImg from '../assets/images/team/Moiz.jpg';
-import mustafaImg from '../assets/images/team/Mustafa.jpg';
-import zaibImg from '../assets/images/team/Zaib.jpg';
+import ahmadImg from '../assets/images/team/Ahmad.webp';
+import hanzalaImg from '../assets/images/team/Hanzala.webp';
+import husnainImg from '../assets/images/team/Husnain.webp';
+import maleeqImg from '../assets/images/team/Maleeq.webp';
+import moizImg from '../assets/images/team/Moiz.webp';
+import mustafaImg from '../assets/images/team/Mustafa.webp';
+import zaibImg from '../assets/images/team/Zaib.webp';
 
 // ✅ Step 2: Use the imported variables in the 'image' field
 export const teamMembers = [

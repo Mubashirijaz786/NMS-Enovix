@@ -1,4 +1,5 @@
 
- export const SITE_URL = "http://localhost:5173"; 
+// Environment-aware configuration
+export const SITE_URL = import.meta.env.VITE_SITE_URL || "https://canvasolutionsllc.com";
 
-export const CONTACT_EMAIL = "hamzatariq209@gmail.com";
+export const CONTACT_EMAIL = "mubashirejaz786@gmail.com";

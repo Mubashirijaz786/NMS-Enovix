@@ -13,13 +13,14 @@ const Services = () => {
             
             {/* ✅ SEO META TAGS FOR SERVICES PAGE */}
             <MetaData 
-                title="Services – Canva Solutions
+                title="Services – NMS Enovix
 " 
                 description="Explore our full range of digital services including custom web development, mobile apps, SEO, graphic design, and software solutions. We build scalable technology for growing businesses."
                 keywords="web development services, mobile app development, SEO agency, graphic design services, custom software, digital marketing solutions, ecommerce development"
             />
 
             {/* 1. HERO SECTION */}
+            <main id="main-content">
             <section className="relative pt-20 pb-32 px-6 lg:px-16 overflow-hidden">
                 {/* Background Glow */}
                 <div className="absolute inset-0 bg-blue-600/10 blur-[120px] pointer-events-none"></div>
@@ -93,6 +94,7 @@ const Services = () => {
                     </div>
                 </div>
             </section>
+            </main>
 
         </ServiceLayout>
     );

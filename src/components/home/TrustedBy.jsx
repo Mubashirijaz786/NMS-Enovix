@@ -5,8 +5,8 @@ import PrimaryButton from '../common/PrimaryButton';
 // Import logos from data file
 import { logoImages } from '../../data/logosData';
 
-import loopBackground from '../../assets/images/loop-background.png';
-import loopImage from '../../assets/images/loop.png';
+import loopBackground from '../../assets/images/loop-background.webp';
+import loopImage from '../../assets/images/loop.webp';
 
 const TrustedBy = () => {
     return (
@@ -18,6 +18,8 @@ const TrustedBy = () => {
                     src={loopBackground}
                     alt="Background texture"
                     className="w-full h-full object-cover scale-105"
+                    loading="lazy"
+                    decoding="async"
                 />
                 <div className="absolute inset-0 bg-black/40 mix-blend-multiply"></div>
             </div>
@@ -30,27 +32,30 @@ const TrustedBy = () => {
                     </p>
                 </div>
 
-                {/* Slider wrapper - No max-width for full screen span */}
+                {/* Slider wrapper */}
                 <div className="relative flex overflow-hidden w-full">
-                    <div className="flex animate-loop-scroll items-center py-4">
-                        {/* Double the array for a seamless infinite loop */}
+                    
+                    {/* Fading Edge Overlays */}
+                    <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#050505]/95 to-transparent z-20 pointer-events-none"></div>
+                    <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#050505]/95 to-transparent z-20 pointer-events-none"></div>
+
+                    {/* Sliding Track - Double the array for seamless loop */}
+                    <div className="flex w-fit animate-loop-scroll items-center py-4 hover:pause">
                         {[...logoImages, ...logoImages].map((logo, index) => (
                             <div key={index} className="mx-4 lg:mx-6 shrink-0">
                                 {/* Logo Card with border and rounded corners */}
-                                <div className="bg-white border border-white rounded-2xl p-4 lg:p-4">
+                                <div className="bg-white border border-white rounded-2xl p-4 lg:p-4 shadow-sm">
                                     <img 
                                         src={logo} 
                                         alt={`Partner Brand ${index + 1}`} 
-                                        className="h-12 lg:h-24 w-auto object-contain cursor-default"
+                                        className="h-12 lg:h-20 w-auto object-contain cursor-default"
+                                        loading="lazy"
+                                        decoding="async"
                                     />
                                 </div>
                             </div>
                         ))}
                     </div>
-
-                    {/* Fading Edge Overlays */}
-                    <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#050505]/95 to-transparent z-10 pointer-events-none"></div>
-                    <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#050505]/95 to-transparent z-10 pointer-events-none"></div>
                 </div>
             </div>
 
@@ -58,7 +63,7 @@ const TrustedBy = () => {
             <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-16 max-w-[1200px]">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
                     
-                    {/* Left Column: Static Image (ScrollRotate removed) */}
+                    {/* Left Column: Static Image */}
                     <div className="relative flex justify-center lg:justify-start group order-2 lg:order-1">
                         <div className="relative z-10 w-3/4 sm:w-full max-w-[350px] lg:max-w-[450px]">
                             <img

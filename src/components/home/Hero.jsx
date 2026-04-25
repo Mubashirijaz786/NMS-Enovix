@@ -16,7 +16,7 @@ const Hero = () => {
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100"  
     ];
 
-    const calendlyLink = "https://calendly.com/canvasolutions-info/";
+    const calendlyLink = "#";
 
     return (
         <div className="relative min-h-[100dvh] w-full bg-gradient-to-b from-[#020617] to-[#172554] flex items-center justify-center p-2 sm:p-4">
@@ -31,6 +31,7 @@ const Hero = () => {
                         loop 
                         muted 
                         playsInline
+                        aria-hidden="true"
                     >
                         <source src={heroVideo} type="video/mp4" />
                     </video>
@@ -60,7 +61,7 @@ const Hero = () => {
                                 </h1>
 
                                 <p className="text-sm sm:text-base text-gray-300 max-w-md leading-relaxed">
-                                    At Canva Solutions, our expert digital services are powered by cutting-edge tools and industry-leading resources designed to drive strategic innovation.
+                                    At NMS Enovix, our expert digital services are powered by cutting-edge tools and industry-leading resources designed to drive strategic innovation.
                                 </p>
 
                                 {/* ✅ UPDATED: Added mb-10 and adjusted padding for more space under buttons */}
@@ -88,7 +89,7 @@ const Hero = () => {
                             <div className="flex h-full items-center justify-center lg:items-end lg:justify-end lg:pb-12 mt-4 lg:mt-0">
                                 <div className="bg-white/5 p-6 rounded-2xl border border-white/10 max-w-[320px] shadow-2xl backdrop-blur-xl transform hover:-translate-y-2 transition-transform duration-500">
                                     <p className="text-gray-200 text-xs sm:text-sm mb-6 leading-relaxed text-center lg:text-left">
-                                        We’re Canva Solutions — the AI-fueled digital agency that blends creativity, code, and strategy to make brands impossible to ignore.
+                                        We’re NMS Enovix — the AI-fueled digital agency that blends creativity, code, and strategy to make brands impossible to ignore.
                                     </p>
                                     
                                     <div className="flex items-center justify-center lg:justify-start gap-4">
@@ -97,7 +98,7 @@ const Hero = () => {
                                                 <img key={index} src={imgSrc} alt="Client" className="w-9 h-9 rounded-full border-2 border-[#020617] object-cover" />
                                             ))}
                                         </div>
-                                        <span className="text-xs text-gray-300 font-medium">2000+ Happy Clients</span>
+                                        <span className="text-xs text-gray-300 font-medium">100+ Happy Clients</span>
                                     </div>
                                 </div>
                             </div>

@@ -16,12 +16,12 @@ import ServiceLayout from './ServiceLayout';
 import PrimaryButton from '../common/PrimaryButton';
 
 // ✅ IMPORT LOCAL IMAGE
-import webHero from '../../assets/images/web.jpg';
+import webHero from '../../assets/images/web.webp';
 
 const WebDevelopment = () => {
     
     // External Link
-    const calendlyLink = "https://calendly.com/canvasolutions-info/";
+    const calendlyLink = "#"; // Replace with your actual Calendly link when ready
 
     // 1. Web Services
     const offerings = [

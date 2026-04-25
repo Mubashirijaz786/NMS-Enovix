@@ -115,13 +115,16 @@ const Contact = () => {
             
             {/* ✅ SEO META TAGS FOR CONTACT PAGE */}
             <MetaData 
-                title="Contact Us | Start Your Project with Canva Solutions" 
-                description="Ready to build something amazing? Contact Canva Solutions for a free consultation on web development, mobile apps, and digital strategy. Let's grow your business today."
-                keywords="contact canva solutions, hire web developers, mobile app quote, software agency contact, digital marketing consultation, project inquiry, get a quote"
+                title="Contact Us | Start Your Project with NMS Enovix" 
+                description="Ready to build something amazing? Contact NMS Enovix for a free consultation on web development, mobile apps, and digital strategy. Let's grow your business today."
+                keywords="contact nms enovix, hire web developers, mobile app quote, software agency contact, digital marketing consultation, project inquiry, get a quote"
             />
 
-            <div className="pt-[33px] px-4 lg:px-16 max-w-[1464px] mx-auto relative z-50">
-                <Navbar />
+            <div className="relative w-full flex items-center justify-center p-2 sm:p-4 z-50">
+              
+                <div className="relative z-10 w-full lg:w-[98%] bg-transparent border border-transparent flex flex-col px-4 sm:px-10 lg:px-16 pt-4">
+                    <Navbar />
+                </div>
             </div>
 
             <section className="relative pt-20 pb-24 px-6 lg:px-16 overflow-hidden text-center">
@@ -141,6 +144,7 @@ const Contact = () => {
                 </div>
             </section>
 
+            <main id="main-content">
             <section className="pb-32 px-6 lg:px-16 pt-6 lg:pt-10">
                 <div className="container mx-auto max-w-[1400px]">
                     <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-24">
@@ -169,15 +173,10 @@ const Contact = () => {
                                         <div>
                                             <p className="text-xs text-gray-500 font-bold uppercase tracking-wider mb-2">USA Office</p>
                                             <a href="https://www.google.com/maps/search/?api=1&query=920+South+West+Pkwy+E+College+Station+TX+77840+USA" target="_blank" rel="noopener noreferrer" className="text-white font-bold hover:text-green-400 transition-colors leading-relaxed block">
-                                                920 South West Pkwy E College<br/>Station TX 77840 USA
+                                               Sargodha
                                             </a>
                                         </div>
-                                        <div>
-                                            <p className="text-xs text-gray-500 font-bold uppercase tracking-wider mb-2">Pakistan Office</p>
-                                            <a href="https://www.google.com/maps/search/?api=1&query=Qasim+Park+Sargodha+Pakistan" target="_blank" rel="noopener noreferrer" className="text-white font-bold hover:text-green-400 transition-colors leading-relaxed block">
-                                                Qasim Park, Sargodha,<br/>40100, Pakistan
-                                            </a>
-                                        </div>
+                                      
                                     </div>
                                 </div>
 
@@ -190,7 +189,7 @@ const Contact = () => {
                                     <p className="text-gray-400 mb-4">Mon-Fri from 8am to 6pm.</p>
                                     <div className="flex flex-col gap-3">
                                         <a href="tel:+17374436352" className="text-white font-bold hover:text-purple-400 transition-colors w-fit block">🇺🇸 +1 737 443 6352</a>
-                                        <a href="tel:+923130901786" className="text-white font-bold hover:text-purple-400 transition-colors w-fit block">🇵🇰 +92 313 090 1786</a>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -350,6 +349,7 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
+            </main>
 
             <Footer />
             <WhatsAppButton />

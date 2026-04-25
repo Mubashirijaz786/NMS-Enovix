@@ -1,0 +1,13 @@
+# Robots.txt for NMS Enovix
+# Allow search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Disallow admin and internal paths (if applicable)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://canvasolutionsllc.com/sitemap.xml

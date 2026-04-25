@@ -28,9 +28,11 @@ const BlogPost = () => {
     return (
         <div className="w-full relative bg-[#020617] min-h-screen text-white selection:bg-blue-500/30 overflow-x-hidden">
             
-            {/* 1. NAVBAR */}
-            <div className="pt-6 px-4 lg:px-16 max-w-[1600px] mx-auto relative z-50">
-                <Navbar />
+            <div className="relative w-full flex items-center justify-center p-2 sm:p-4 z-50">
+              
+                <div className="relative z-10 w-full lg:w-[98%] bg-transparent border border-transparent flex flex-col px-4 sm:px-10 lg:px-16 pt-4">
+                    <Navbar />
+                </div>
             </div>
 
             <article className="pb-24 relative z-10">

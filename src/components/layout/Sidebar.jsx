@@ -24,25 +24,25 @@ const Sidebar = () => {
       id: 3, 
       label: "Facebook", 
       icon: Facebook, 
-      link: "https://www.facebook.com/canvasolutionsofficial" 
+      link: "#" 
     },
     { 
       id: 4, 
       label: "Instagram", 
       icon: Instagram, 
-      link: "https://www.instagram.com/canva_solutions_" 
+      link: "#" 
     },
     { 
       id: 5, 
       label: "LinkedIn", 
       icon: Linkedin, 
-      link: "https://www.linkedin.com/company/canva-solutions/?originalSubdomain=pk" 
+      link: "#" 
     },
     { 
       id: 6, 
       label: "Upwork", 
       icon: UpworkIcon, 
-      link: "https://upwork.com/freelancers/canvasolutions" 
+      link: "#" 
     },
   ];
 

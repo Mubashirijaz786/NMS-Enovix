@@ -16,12 +16,12 @@ import PrimaryButton from '../../components/common/PrimaryButton';
 
 // ✅ IMPORT YOUR LOCAL IMAGE HERE
 // Make sure the file name and extension (.jpg, .png) match exactly what is in your folder!
-import ecommerceHero from '../../assets/images/E-commerce.jpg'; 
+import ecommerceHero from '../../assets/images/E-commerce.webp'; 
 
 const Ecommerce = () => {
     
     // External Link
-    const calendlyLink = "https://calendly.com/canvasolutions-info/";
+    const calendlyLink = "#"; // Replace with your actual Calendly link when ready
 
     // 1. Key Features Data
     const features = [
@@ -223,7 +223,7 @@ const Ecommerce = () => {
                         <div className="relative">
                             <div className="absolute inset-0 bg-green-500/20 blur-[80px]"></div>
                             <div className="relative p-8 rounded-3xl bg-[#020617] border border-green-500/30 shadow-2xl">
-                                <h3 className="text-2xl font-bold text-white mb-6">The Canva Solutions Edge</h3>
+                                <h3 className="text-2xl font-bold text-white mb-6">The NMS Enovix Edge</h3>
                                 <ul className="space-y-5">
                                     {["Sub-second Load Times", "Custom Conversion Funnels", "One-Click Checkout", "AI-Powered Product Recommendations", "24/7 Support & Maintenance"].map((item, i) => (
                                         <li key={i} className="flex items-center gap-3 text-white font-medium">

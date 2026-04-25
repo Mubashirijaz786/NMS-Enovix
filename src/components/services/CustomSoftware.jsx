@@ -15,12 +15,12 @@ import ServiceLayout from './ServiceLayout';
 import PrimaryButton from '../common/PrimaryButton';
 
 // ✅ IMPORT LOCAL IMAGE
-import softwareHero from '../../assets/images/Software.jpg';
+import softwareHero from '../../assets/images/Software.webp';
 
 const CustomSoftware = () => {
     
     // External Link
-    const calendlyLink = "https://calendly.com/canvasolutions-info/";
+    const calendlyLink = "#"; // Replace with your actual Calendly link when ready
 
     // 1. Software Services
     const offerings = [
@@ -260,17 +260,17 @@ const CustomSoftware = () => {
                     <div className="space-y-4">
                         {[
                             { 
-                                q: "What sets Canva Solutions apart from the rest of software development firms?", 
+                                q: "What sets NMS Enovix apart from the rest of software development firms?", 
                                 a: "We use our deep industry knowledge and strategic approach to generate innovative solutions that solve your business problems dramatically, leading to real value rather than just checking off tasks. Our teams invest the time to understand your business goals, ensuring our efforts deliver meaningful outcomes rather than just outputs. By lining up with your objectives, we not only meet but consistently exceed your expectations." 
                                 //
                             },
                             { 
-                                q: "What advantages come with selecting Canva Solutions as your custom software development partner?", 
-                                a: "At Canva Solutions, our teams understand the difference between completion and success. Through our Project Management Office (PMO), we ensure high productivity and quality delivery across our global service centers while focusing on continuously improving our software development velocity and agility. With a strong product mindset, our agile teams are dedicated to delivering solutions that meet or exceed ROI expectations. Many of our customers will attest that our ability to deliver beyond expectations is why they have been working with us for over 5 years." 
+                                q: "What advantages come with selecting NMS Enovix as your custom software development partner?", 
+                                a: "At NMS Enovix, our teams understand the difference between completion and success. Through our Project Management Office (PMO), we ensure high productivity and quality delivery across our global service centers while focusing on continuously improving our software development velocity and agility. With a strong product mindset, our agile teams are dedicated to delivering solutions that meet or exceed ROI expectations. Many of our customers will attest that our ability to deliver beyond expectations is why they have been working with us for over 5 years." 
                                 //
                             },
                             { 
-                                q: "What software technologies will Canva Solutions use for my project?", 
+                                q: "What software technologies will NMS Enovix use for my project?", 
                                 a: "Our highly skilled and diverse talent pool enables us to create custom software using the languages, platforms, and frameworks of your choice, ensuring compatibility of tools and seamless integrations that help avoid costly and unnecessary upgrades. We also offer technology modernization services that allow bringing current solutions into line with your new custom software." 
                                 //
                             },

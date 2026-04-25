@@ -1,32 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ChevronUp } from 'lucide-react';
 
 const ScrollToTop = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const sectionOffsetRef = useRef(null);
+
+    useEffect(() => {
+        // Cache the offset position once (avoid repeated reflow queries)
+        const trustedSection = document.getElementById('trusted-section');
+        if (trustedSection) {
+            sectionOffsetRef.current = trustedSection.offsetTop - 100;
+        } else {
+            sectionOffsetRef.current = 500; // Fallback
+        }
+    }, []); // Only run once on mount
 
     useEffect(() => {
         const toggleVisibility = () => {
-            // Find the TrustedBy section by ID
-            const trustedSection = document.getElementById('trusted-section');
-            
-            if (trustedSection) {
-                // Check if we have scrolled past the top of the TrustedBy section
-                if (window.scrollY >= trustedSection.offsetTop - 100) { // -100 for a bit of buffer
-                    setIsVisible(true);
-                } else {
-                    setIsVisible(false);
-                }
-            } else {
-                // Fallback: Show after 500px if section not found
-                if (window.scrollY > 500) {
-                    setIsVisible(true);
-                } else {
-                    setIsVisible(false);
-                }
-            }
+            // Use cached offset, only compare scroll position
+            const threshold = sectionOffsetRef.current || 500;
+            setIsVisible(window.scrollY > threshold);
         };
 
-        window.addEventListener('scroll', toggleVisibility);
+        // Use passive listener for better scroll performance
+        window.addEventListener('scroll', toggleVisibility, { passive: true });
 
         return () => window.removeEventListener('scroll', toggleVisibility);
     }, []);
